@@ -1,0 +1,143 @@
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding:0;
+        }
+
+        .form-flex__container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .form__colonne{
+            width:500px;
+        }
+
+
+
+        /******************/
+        /* STYLES DU MAIL */
+        /******************/
+        .input-item, .textarea-item{
+            position:relative;
+            margin:0.5rem auto;
+        }
+        .input-item__lastname{
+            background-image:url('../images/icon_lastname.svg');
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
+        .input-item__firstname{
+            background-image:url('../images/icon_firstname.svg');
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
+        .input-item__mail{
+            background-image:url('../images/icon_mail.svg');
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
+
+        .input-item__field{
+            background-color:grey; 
+            border:none;
+            border-radius:20px;
+            color:white;
+            height:50px;
+            left:0;            
+            padding-left:70px;
+            position:absolute;
+            top:0;
+            width:400px;
+        }
+
+        /**the input-item__cache class is to identify the current item when the class input-item__cache_closed is changed dynamically into input-item__cache_opened **/
+        .input-item__cache{
+            position:relative;
+            top:0;
+            left:0;
+            height:50px;
+            background-color:lightgrey;
+            border:none
+        }
+        .input-item__cache_closed{
+            width:400px;
+            border-radius:20px;
+            text-align:center;
+            animation:all 2s ease-in-out;
+        }
+        .input-item__cache_opened{
+            width:60px;
+            border-radius:20px 0 0 20px;
+        }
+
+
+        .textarea-item__field{             
+            background-color:grey;
+            border:none;
+            border-color: transparent; 
+            border-radius:20px;
+            color:white;  
+            font-family: Arial, Helvetica, sans-serif;
+            left:0;         
+            outline: none;
+            position:absolute;
+            top:0;
+            width:400px;
+        }
+        .textarea-item__field_closed{
+            height:50px;
+            padding:0 0 0 70px;
+        }
+        .textarea-item__field_opened{
+            height:150px;
+            padding:1rem 1rem 1rem 70px;
+        }
+
+        .textarea-item__cache_message{
+            background-image:url('../images/icon_message.svg');
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
+        .textarea-item__cache{
+            background-color:lightgrey;            
+            border:none;
+            border-color:transparent; 
+            color:white;            
+            left:0;
+            position:absolute;
+            top:0;
+        }
+        .textarea-item__cache_closed{
+            border-radius:20px;
+            height:50px; 
+            width:400px;
+        }
+        .textarea-item__cache_opened{
+            border-radius:20px 0 0 20px;
+            height:150px; 
+            width:60px;
+        }
+
+        /******************/
+        /* STYLES DU PUZZLE */
+        /******************/
+
+        .puzzle{
+            border:dotted 1px grey;
+            height:250px;
+            position:relative;
+            //top:200px;
+            margin: 1rem auto;
+            width:500px;
+        }   
+        
+        .puzzle_piece1{position:absolute; top:0; left:0; width:139px; height:100px; background-image:url("../images/puzzle_piece1.svg");}
+        .puzzle_piece2{position:absolute; top:61px; left:0; width:100px; height:139px; background-image:url("../images/puzzle_piece2.svg ");}
+        .puzzle_piece3{position:absolute; top:0; left:100px; width:100px; height:139px; background-image:url("../images/puzzle_piece3.svg");}
+        .puzzle_piecetransparente{position:absolute; top:100px; left:61px; width:139px; height:100px; background-image:url("../images/puzzle_piecetransparente.svg");}
+        .puzzle_piece4{position:absolute; top:70px; left:331px; width:139px; height:100px; background-image:url("../images/puzzle_piece4.svg");}
+        .puzzle_texte{position: absolute; top:210px; font-family : Arial, Helvetica, sans-serif; font-size:0.8rem; color:white;text-align:center; width: 100%; background-color: #76680d;padding:1rem 0;}

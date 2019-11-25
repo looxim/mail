@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Animated mail with puzzle to validate</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodolphe Cicognani" />
+    <meta name="copyright" content="©looxim" />
+    <meta name="description" content="animated mail input with human submit through a puzzle, you are free to use and make it better"/>
+    <meta name="keywords" content="jquery, mail form, puzzle" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "styles/mail.css" />
+</head>
+<body>
+ <form id="form__mail" action="destination.html">
+        <input type="hidden" id="nom_form" value="subscription"></input>
+        <div class="form-flex__container">
+        
+            <div class="form__colonne">
+                <div class="input-item">
+                    <input type='text' class='input-item__field' placeholder='Nom'>
+                    <div class='input-item__cache input-item__cache_closed input-item__lastname' required></div>
+                </div>
+                <div class="input-item">
+                    <input type='text' class='input-item__field' placeholder='Prénom' required>
+                    <div class='input-item__cache input-item__cache_closed input-item__firstname'></div>
+                </div>
+                <div class="input-item">
+                    <input type='mail' class='input-item__field' placeholder='Courriel' required>
+                    <div class='input-item__cache input-item__cache_closed input-item__mail'></div>
+                </div>
+                <div class="textarea-item">
+                    <textarea class='textarea-item__field textarea-item__field_closed' placeholder='Message' required></textarea>
+                    <div class='textarea-item__cache textarea-item__cache_closed textarea-item__cache_message'></div>
+                </div>
+            </div>
+
+
+            <div class="form__colonne">
+                <div class="puzzle">
+                        <div class="puzzle_piece1">
+                        </div>
+                        <div class="puzzle_piece2">
+                        </div>
+                        <div class="puzzle_piece3">
+                        </div>
+                        <div class="puzzle_piecetransparente">
+                        </div>
+                        <div class="puzzle_texte">Veuillez déplacer la pièce de puzzle dans son emplacement pour envoyer</div>
+                        <div class="puzzle_piece4">
+                        </div>
+                </div>
+            </div> 
+        </div>
+</form>   
+
+
+
+<script src="scripts/mail.js"></script>
+
+</body>
+</html>
